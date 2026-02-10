@@ -1,10 +1,8 @@
 node_modules/
-dist/
+service-account.json
 .env
 .env.local
 .env.production
-firebase-debug.log
-tmpclaude-*
 *.log
-service-account.json
-.firebase/
+tmpclaude-*
+knm-app/
