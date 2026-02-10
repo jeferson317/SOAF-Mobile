@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: knm-backend
+    runtime: node
+    repo: https://github.com/jeferson317/knm-backend
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 4000
+      - key: RESEND_API_KEY
+        value: re_RaX3TyWa_P5Wa5fVTJkfTZm5AtnAUkH8A
+      - key: ALLOWED_ORIGIN
+        value: https://knm-telecom.web.app
+      - key: SPREADSHEET_ID
+        value: 16hFEaMWOagQ9rhIle9-Q4Jch08UQJXbzA4AdRV6HmJY
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/service-account.json
