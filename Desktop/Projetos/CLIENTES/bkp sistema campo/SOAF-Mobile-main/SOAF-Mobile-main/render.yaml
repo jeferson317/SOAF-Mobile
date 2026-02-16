@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: soaf-mobile-backend
+    runtime: node
+    repo: https://github.com/jeferson317/SOAF-Mobile.git
+    branch: main
+    region: oregon
+    plan: free
+    rootDir: server
+    buildCommand: npm install --production
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALLOWED_ORIGIN
+        value: https://soaf-mobile.web.app
+      - key: SPREADSHEET_ID
+        value: 1EiSWfN5--3-fvHB3lc7tHG9Dls8qM5I61y_2ixx-rWI
